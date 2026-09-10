@@ -13,6 +13,202 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
+    <header class="site-header">
+      <div class="wrap site-header__inner">
+        <h1>Galería de proyectos técnicos</h1>
+        <p class="site-header__subtitle">
+          Muestra de proyectos de hardware, software e inteligencia artificial desarrollado por
+          estudiantes de IX Semestre de Ingeniería de Sistemas.
+        </p>
+      </div>
+    </header>
+
+    <nav class="site-nav" role="navigation" aria-label="Categorías de proyectos">
+      <ul class="wrap">
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#ia">Inteligencia artificial</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      <section id="hardware" class="category" aria-labelledby="hardware-title">
+        <div class="wrap">
+          <h2 id="hardware-title" class="category__title category__title--hw">Hardware</h2>
+          <div class="gallery">
+            <article class="card card--hw">
+              <img
+                class="card__thumb"
+                src="assets/images/01riesgo.jpg"
+                alt="Ilustración de un controlador con sensor de humedad y una gota de agua, representando un sistema de riego automatizado"
+                width="400"
+                height="225"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3>Sistema de riego automatizado</h3>
+                <p>
+                  Controlador basado en Arduino que mide la humedad del suelo mediante sensores y
+                  activa mecanismo de riego cuando el cultivo lo necesita.
+                </p>
+                <ul class="tags">
+                  <li>Arduino</li>
+                  <li>Sensores</li>
+                  <li>IoT</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card card--hw card--tall">
+              <img
+                class="card__thumb"
+                src="assets/images/02robotseguidor.jpg"
+                alt="Ilustración de un robot pequeño con dos sensores infrarrojos siguiendo una línea negra"
+                width="400"
+                height="225"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3>Robot seguidor de línea</h3>
+                <p>
+                  Robot de dos ruedas que utiliza sensor infrarrojo para seguir una trayectoria
+                  trazada en el suelo.
+                </p>
+                <p>
+                  Usa algoritmo para reducir las oscilaciones en curvas y mejorar la velocidad del
+                  recorrido.
+                </p>
+                <ul class="tags">
+                  <li>Robótica</li>
+                  <li>C++</li>
+                  <li>PID</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="software" class="category" aria-labelledby="software-title">
+        <div class="wrap">
+          <h2 id="software-title" class="category__title category__title--sw">Software</h2>
+          <div class="gallery">
+            <article class="card card--sw card--tall">
+              <img
+                class="card__thumb"
+                src="assets/images/03Inventario.jpeg"
+                alt="Ilustración de cajas apiladas junto a un cilindro de base de datos, representando un sistema de gestión de inventarios"
+                width="400"
+                height="225"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3>Sistema de inventarios</h3>
+                <p>
+                  Aplicación web para pequeñas empresas que permite manejar el control de stock,
+                  proveedores y órdenes de compra.
+                </p>
+                <p>
+                  Cuenta con alertas para reabastecer stock y generación reportes.
+                </p>
+                <ul class="tags">
+                  <li>Java</li>
+                  <li>Spring Boot</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card card--sw">
+              <img
+                class="card__thumb"
+                src="assets/images/04Aprendizaje.jpg"
+                alt="Ilustración de un libro abierto con un ícono de reproducción, representando una plataforma de e-learning"
+                width="400"
+                height="225"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3>Plataforma de aprendizaje</h3>
+                <p>
+                  Aplicación virtual de aprendizaje con cursos por módulos, seguimiento de progreso y
+                  evaluaciones.
+                </p>
+                <ul class="tags">
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="ia" class="category" aria-labelledby="ia-title">
+        <div class="wrap">
+          <h2 id="ia-title" class="category__title category__title--ai">Inteligencia artificial</h2>
+          <div class="gallery">
+            <article class="card card--ai">
+              <img
+                class="card__thumb"
+                src="assets/images/05Recomendacion.jpg"
+                alt="Ilustración de una red de nodos conectados, representando un sistema de recomendación de productos"
+                width="400"
+                height="225"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3>Sistema de recomendación de productos</h3>
+                <p>
+                  Modelo entrenado que sugiere productos a partir del historial de
+                  compras y el comportamiento de los usuarios.
+                </p>
+                <ul class="tags">
+                  <li>Python</li>
+                  <li>Scikit-learn</li>
+                  <li>Pandas</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card card--ai card--tall">
+              <img
+                class="card__thumb"
+                src="assets/images/06ModeloCNN.jpg"
+                alt="Ilustración de una cuadrícula de píxeles con una lupa, representando un clasificador de imágenes médicas"
+                width="400"
+                height="225"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3>Clasificador de imágenes</h3>
+                <p>
+                  Red neuronal convolucional CNN entrenada para la detección de
+                  anomalías en radiografías de tórax.
+                </p>
+                <p>
+                  El modelo se evaluó con una matriz de confusión revisada con personal médico.
+                </p>
+                <ul class="tags">
+                  <li>Python</li>
+                  <li>TensorFlow</li>
+                  <li>CNN</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Facultad de Ingeniería de Sistemas de la Universidad Nacional del Centro del Perú</p>
+        <p>Galería de proyectos técnicos - 2026</p>
+      </div>
+    </footer>
   </body>
 </html>
