@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practica de laboratorio N2 del curso Desarrollo de Aplicaciones Web sobre HTML5, CSS3, diseño responsivo y SEO.">
+  <title>Practica Semana 02 - Desarrollo Web Frontend</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+  <header data-category="encabezado">
+    <h1>Practica Semana 02: HTML5, CSS3 y Diseño Responsivo</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="#contenido">Inicio</a></li>
+        <li><a href="#tarjetas">Actividades</a></li>
+        <li><a href="#pie">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" data-source="xml-simulado" data-category="practica-semana-02">
+
+    <section class="hero">
+      <h2>Objetivo de la practica</h2>
+      <p>Crear una pagina con estructura HTML5 semantica, layout combinando Grid y Flexbox,
+        tipografia que se adapte al tamaño de pantalla, y validar todo con Lighthouse y WAVE.</p>
+    </section>
+
+    <section id="tarjetas">
+      <h2 class="sr-only">Actividades de la práctica</h2>
+      <article class="card" data-category="html">
+        <h3>Paso 1: Estructura HTML</h3>
+        <p>Etiquetas semanticas y separacion entre contenido y estilo.</p>
+      </article>
+
+      <article class="card" data-category="css">
+        <h3>Paso 2: Tipografia fluida</h3>
+        <p>Uso de variables CSS, clamp() y calc().</p>
+      </article>
+
+      <article class="card" data-category="layout">
+        <h3>Paso 3: Layout hibrido</h3>
+        <p>Grid para la estructura general y Flexbox para las tarjetas.</p>
+      </article>
+
+      <article class="card" data-category="responsivo">
+        <h3>Paso 4: Responsivo</h3>
+        <p>Media queries y container queries.</p>
+      </article>
+
+      <article class="card" data-category="validacion">
+        <h3>Paso 5: Validacion</h3>
+        <p>Correccion de errores con Lighthouse, WAVE y W3C.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer id="pie">
+    <p>&copy; 2026 UNCP - Facultad de Ingenieria de Sistemas</p>
+  </footer>
+
+</body>
+</html>
